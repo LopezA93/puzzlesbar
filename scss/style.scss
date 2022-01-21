@@ -230,6 +230,9 @@ body {
                         text-align: center;
                     }
                 }
+                .form-check {
+                    padding-left: 0 !important;
+                }
             }
         }
         #servicios {
@@ -328,16 +331,17 @@ body {
         width: auto !important;
         
         ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
             .logo {
                 img{
                     width: 250px;
                     display: block;
                 }
             }
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
+            
             a{
                 align-content: center;
                 
@@ -350,6 +354,10 @@ body {
             
         }
     }
-    
+    @media (max-width:712px) {
+        .imgBar {
+            margin-top: 1.5rem !important;
+        }
+    }
     
 }
